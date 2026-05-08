@@ -54,40 +54,42 @@
   }
   .top-back:active { background: var(--gris); }
 
-  /* ── HERO — logo UAM + texto ── */
+  /* ── HERO — logo UAM izquierda + texto derecha ── */
   .hero-band {
     background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%);
-    padding: 20px 22px 22px;
+    padding: 22px 22px 26px;
     position: relative; overflow: hidden; flex-shrink: 0;
-    display: flex; flex-direction: column; align-items: flex-start;
+    display: flex; flex-direction: row; align-items: center; gap: 18px;
   }
   .hero-band::after {
     content:''; position:absolute; width:180px; height:180px; border-radius:50%;
     background:rgba(244,215,59,.13); right:-30px; top:-40px; pointer-events:none;
   }
   .hero-uam-logo {
-    height: 52px;
+    height: 76px;
+    width: 76px;
     object-fit: contain;
-    max-width: 180px;
-    margin-bottom: 14px;
+    flex-shrink: 0;
     position: relative; z-index: 1;
-    /* fondo blanco suave para que no se vea superpuesto */
-    background: rgba(255,255,255,0.12);
-    border-radius: 8px;
-    padding: 4px 8px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.9);
+    padding: 6px;
+  }
+  .hero-text {
+    flex: 1;
+    position: relative; z-index: 1;
   }
   .hero-band-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900; font-size: 26px;
+    font-weight: 900; font-size: 24px;
     color: #fff; line-height: 1.15;
-    position: relative; z-index: 1;
   }
   .hero-band-title span {
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: rgba(255,255,255,.75);
-    margin-top: 6px;
+    margin-top: 7px;
     letter-spacing: .3px;
   }
 
@@ -170,9 +172,11 @@
   </div>
   <div class="hero-band">
     <img class="hero-uam-logo" src="logo-uam.png" alt="UAM">
-    <div class="hero-band-title">
-      SOLICITA TU<br>CERTIFICADO<br>AQUÍ
-      <span>Registro Académico · UAM</span>
+    <div class="hero-text">
+      <div class="hero-band-title">
+        SOLICITA TU<br>CERTIFICADO<br>AQUÍ
+        <span>Registro Académico · UAM</span>
+      </div>
     </div>
   </div>
   <div class="wave"></div>
