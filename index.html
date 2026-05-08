@@ -51,38 +51,30 @@
   /* botón atrás — solo en screen-body, no en top-bar */
   .top-back { display: none; }
 
-  /* ── HERO — logo UAM sin fondo ── */
   .hero-band {
     background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%);
-    padding: 22px 22px 26px;
+    padding: 28px 24px 32px;
     position: relative; overflow: hidden; flex-shrink: 0;
-    display: flex; flex-direction: row; align-items: center; gap: 18px;
+    display: flex; align-items: center; justify-content: center;
   }
   .hero-band::after {
     content:''; position:absolute; width:180px; height:180px; border-radius:50%;
     background:rgba(244,215,59,.13); right:-30px; top:-40px; pointer-events:none;
   }
-  .hero-uam-logo {
-    height: 76px;
-    width: 76px;
-    object-fit: contain;
-    flex-shrink: 0;
-    position: relative; z-index: 1;
-    mix-blend-mode: screen; /* elimina el fondo blanco sobre el azul */
-  }
   .hero-text {
-    flex: 1;
+    width: 100%;
     position: relative; z-index: 1;
+    text-align: center;
   }
   .hero-band-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900; font-size: 28px;
-    color: #fff; line-height: 1.25;
+    font-weight: 900; font-size: 32px;
+    color: #fff; line-height: 1.15;
     letter-spacing: -0.5px;
   }
   .hero-band-title span {
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: rgba(255,255,255,.75);
     margin-top: 10px;
@@ -169,10 +161,9 @@
     <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
   </div>
   <div class="hero-band">
-    <img class="hero-uam-logo" src="logo-uam.png" alt="UAM">
     <div class="hero-text">
       <div class="hero-band-title">
-        SOLICITA TU<br>CERTIFICADO<br>AQUÍ
+        SOLICITA TU CERTIFICADO AQUÍ
         <span>Registro Académico · UAM</span>
       </div>
     </div>
