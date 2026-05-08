@@ -30,48 +30,78 @@
   @keyframes sIn   { from { opacity:0; transform:translateX(24px);  } to { opacity:1; transform:none; } }
   @keyframes sBack { from { opacity:0; transform:translateX(-24px); } to { opacity:1; transform:none; } }
 
-  /* TOP BAR */
+  /* ── TOP BAR — solo logo AC ── */
   .top-bar {
-    background: #fff; padding: 10px 18px;
-    display: flex; align-items: center; gap: 12px;
+    background: #fff;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid var(--borde);
     position: sticky; top: 0; z-index: 10; flex-shrink: 0;
-    min-height: 58px;
+    min-height: 54px;
   }
-  .top-bar-logos {
-    display: flex; align-items: center; gap: 12px;
-    justify-content: center; flex: 1;
+  .top-bar img.logo-ac {
+    height: 34px;
+    object-fit: contain;
+    max-width: 200px;
   }
-  .top-bar-logos img { height: 38px; object-fit: contain; max-width: 140px; }
-  .top-bar-logos .divider { width: 1px; height: 38px; background: var(--borde); flex-shrink: 0; }
   .top-back {
-    margin-left: auto; cursor: pointer; font-size: 13px; font-weight: 700;
+    cursor: pointer; font-size: 13px; font-weight: 700;
     color: var(--azul); font-family: 'Montserrat', sans-serif;
     background: none; border: none; padding: 6px 10px; border-radius: 8px;
-    white-space: nowrap; flex-shrink: 0;
+    white-space: nowrap;
   }
   .top-back:active { background: var(--gris); }
-  .top-logo-small { height: 32px; object-fit: contain; max-width: 120px; }
 
-  /* HERO */
+  /* ── HERO — logo UAM + texto ── */
   .hero-band {
     background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%);
-    padding: 24px 22px 20px; position: relative; overflow: hidden; flex-shrink: 0;
+    padding: 20px 22px 22px;
+    position: relative; overflow: hidden; flex-shrink: 0;
+    display: flex; flex-direction: column; align-items: flex-start;
   }
-  .hero-band::after { content:''; position:absolute; width:160px; height:160px; border-radius:50%; background:rgba(244,215,59,.13); right:-30px; top:-40px; }
-  .hero-band-icon { font-size: 38px; margin-bottom: 10px; display: block; }
-  .hero-band-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: #fff; line-height: 1.2; }
+  .hero-band::after {
+    content:''; position:absolute; width:180px; height:180px; border-radius:50%;
+    background:rgba(244,215,59,.13); right:-30px; top:-40px; pointer-events:none;
+  }
+  .hero-uam-logo {
+    height: 52px;
+    object-fit: contain;
+    max-width: 180px;
+    margin-bottom: 14px;
+    position: relative; z-index: 1;
+    /* fondo blanco suave para que no se vea superpuesto */
+    background: rgba(255,255,255,0.12);
+    border-radius: 8px;
+    padding: 4px 8px;
+  }
+  .hero-band-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; font-size: 26px;
+    color: #fff; line-height: 1.15;
+    position: relative; z-index: 1;
+  }
+  .hero-band-title span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,.75);
+    margin-top: 6px;
+    letter-spacing: .3px;
+  }
+
   .wave { background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%); height: 28px; position: relative; flex-shrink: 0; }
   .wave::after { content:''; position:absolute; bottom:0; left:0; right:0; height:28px; background:#fff; border-radius:24px 24px 0 0; }
 
-  /* STRIPE */
+  /* ── STRIPE ── */
   .stripe-bottom { height: 64px; flex-shrink: 0; background: linear-gradient(135deg, var(--amarillo) 0%, var(--amarillo2) 100%); clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0% 100%); margin-top: 24px; }
 
-  /* CONTENT */
+  /* ── CONTENT ── */
   .screen-body { padding: 20px 18px 12px; flex-shrink: 0; }
   .content-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 20px; color: var(--texto); line-height: 1.2; margin-bottom: 18px; text-align: center; }
 
-  /* MENU BUTTONS */
+  /* ── MENU BUTTONS ── */
   .menu-btn {
     display: flex; align-items: center; gap: 14px;
     width: 100%; background: #fff; border: 1.5px solid var(--borde);
@@ -85,13 +115,13 @@
   .menu-btn-sub { font-size: 11px; color: var(--muted); }
   .menu-btn-arrow { font-size: 20px; color: var(--borde); margin-left: auto; flex-shrink: 0; }
 
-  /* BULLETS */
+  /* ── BULLETS ── */
   .bullet-list { margin-bottom: 18px; }
   .bullet-item { display: flex; align-items: flex-start; gap: 10px; padding: 11px 0; border-bottom: 1px solid var(--borde); font-size: 13px; color: var(--texto); line-height: 1.5; }
   .bullet-item:last-child { border-bottom: none; }
   .bullet-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--azul); flex-shrink: 0; margin-top: 4px; }
 
-  /* NOTES */
+  /* ── NOTES ── */
   .note { border-radius: 10px; padding: 13px 14px; display: flex; gap: 10px; align-items: flex-start; margin-bottom: 14px; font-size: 13px; line-height: 1.5; }
   .note-icon { font-size: 16px; flex-shrink: 0; }
   .note-blue   { background: #e3f2fd; color: #1565c0; }
@@ -99,7 +129,7 @@
   .note-green  { background: #e8f5e9; color: #2e7d32; }
   .note-red    { background: #fce4ec; color: #880e4f; }
 
-  /* STEPS */
+  /* ── STEPS ── */
   .steps { margin-bottom: 18px; }
   .step { display: flex; gap: 13px; padding: 13px 0; border-bottom: 1px solid var(--borde); align-items: flex-start; }
   .step:last-child { border-bottom: none; }
@@ -108,7 +138,7 @@
   .step-text { font-size: 12px; color: var(--muted); line-height: 1.6; }
   .step-text a { color: var(--azul); font-weight: 600; word-break: break-all; }
 
-  /* BUTTONS */
+  /* ── BUTTONS ── */
   .btn-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 13px 20px; border-radius: 11px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 13px; cursor: pointer; border: none; text-decoration: none; flex: 1; }
   .btn-primary { background: var(--azul); color: #fff; }
@@ -118,11 +148,10 @@
   .btn-ghost   { background: var(--gris); border: 1.5px solid var(--borde); color: var(--muted); flex: none; padding: 13px 16px; }
   .btn-ghost:active { border-color: var(--azul); color: var(--azul); }
 
-  /* LOADING */
-  #loading { position: fixed; inset: 0; z-index: 9999; background: var(--azul); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; transition: opacity .5s; }
-  .load-logo { height: 80px; object-fit: contain; }
+  /* ── LOADING ── */
+  #loading { position: fixed; inset: 0; z-index: 9999; background: var(--azul); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
   .load-bar { width: 140px; height: 3px; background: rgba(255,255,255,.2); border-radius: 2px; overflow: hidden; }
-  .load-fill { height: 100%; background: var(--amarillo); animation: lf 1.1s ease forwards; }
+  .load-fill { height: 100%; background: var(--amarillo); animation: lf 1s ease forwards; }
   @keyframes lf { from{width:0}to{width:100%} }
 </style>
 </head>
@@ -130,23 +159,21 @@
 
 <!-- LOADING -->
 <div id="loading">
-  <img class="load-logo" src="logo-uam.png" alt="UAM" onerror="this.style.display='none';document.getElementById('load-text').style.display='block'">
-  <div id="load-text" style="display:none;font-family:'Montserrat',sans-serif;font-weight:900;font-size:24px;color:#fff">CertifiUAM</div>
+  <img src="logo-uam.png" style="height:80px;object-fit:contain;" alt="UAM">
   <div class="load-bar"><div class="load-fill"></div></div>
 </div>
 
 <!-- ═══ HOME ═══ -->
 <div class="screen active" id="s-home">
   <div class="top-bar">
-    <div class="top-bar-logos">
-      <img src="logo-uam.png" alt="UAM" onerror="this.style.display='none'">
-      <div class="divider"></div>
-      <img src="logo-ac.png" alt="Alta Calidad" onerror="this.style.display='none'">
-    </div>
+    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
   </div>
   <div class="hero-band">
-    <span class="hero-band-icon">🏛️</span>
-    <div class="hero-band-title">SOLICITA TU<br>CERTIFICADO<br>AQUÍ</div>
+    <img class="hero-uam-logo" src="logo-uam.png" alt="UAM">
+    <div class="hero-band-title">
+      SOLICITA TU<br>CERTIFICADO<br>AQUÍ
+      <span>Registro Académico · UAM</span>
+    </div>
   </div>
   <div class="wave"></div>
   <div class="screen-body">
@@ -182,7 +209,7 @@
 <!-- ═══ PAGO EN LÍNEA ═══ -->
 <div class="screen" id="s-pago">
   <div class="top-bar">
-    <img class="top-logo-small" src="logo-uam.png" alt="UAM" onerror="this.style.display='none'">
+    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
     <button class="top-back" onclick="goBack()">‹ Atrás</button>
   </div>
   <div class="screen-body">
@@ -208,7 +235,7 @@
 <!-- ═══ RECIBO DE PAGO ═══ -->
 <div class="screen" id="s-recibo">
   <div class="top-bar">
-    <img class="top-logo-small" src="logo-uam.png" alt="UAM" onerror="this.style.display='none'">
+    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
     <button class="top-back" onclick="goBack()">‹ Atrás</button>
   </div>
   <div class="screen-body">
@@ -236,7 +263,7 @@
 <!-- ═══ CARNETS ═══ -->
 <div class="screen" id="s-carnet">
   <div class="top-bar">
-    <img class="top-logo-small" src="logo-uam.png" alt="UAM" onerror="this.style.display='none'">
+    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
     <button class="top-back" onclick="goBack()">‹ Atrás</button>
   </div>
   <div class="screen-body">
@@ -262,7 +289,7 @@
 <!-- ═══ ANTES DEL 2003 ═══ -->
 <div class="screen" id="s-antes2003">
   <div class="top-bar">
-    <img class="top-logo-small" src="logo-uam.png" alt="UAM" onerror="this.style.display='none'">
+    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
     <button class="top-back" onclick="goBack()">‹ Atrás</button>
   </div>
   <div class="screen-body">
@@ -290,7 +317,7 @@
 <!-- ═══ GUÍA ═══ -->
 <div class="screen" id="s-guia">
   <div class="top-bar">
-    <img class="top-logo-small" src="logo-uam.png" alt="UAM" onerror="this.style.display='none'">
+    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
     <button class="top-back" onclick="goBack()">‹ Atrás</button>
   </div>
   <div class="screen-body">
