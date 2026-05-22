@@ -32,17 +32,12 @@
   @keyframes sBack { from { opacity:0; transform:translateX(-24px); } to { opacity:1; transform:none; } }
 
   .top-bar {
-    background: #fff;
-    padding: 0;
+    background: #fff; padding: 0;
     display: flex; align-items: center;
     border-bottom: 1px solid var(--borde);
-    position: sticky; top: 0; z-index: 10; flex-shrink: 0;
-    overflow: hidden;
+    position: sticky; top: 0; z-index: 10; flex-shrink: 0; overflow: hidden;
   }
-  .top-bar img.logo-ac {
-    width: 100%; height: auto;
-    display: block; object-fit: cover; max-width: 100%;
-  }
+  .top-bar img.logo-ac { width: 100%; height: auto; display: block; object-fit: cover; max-width: 100%; }
 
   .hero-band {
     background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%);
@@ -50,20 +45,10 @@
     position: relative; overflow: hidden; flex-shrink: 0;
     display: flex; align-items: center; justify-content: center;
   }
-  .hero-band::after {
-    content:''; position:absolute; width:180px; height:180px; border-radius:50%;
-    background:rgba(244,215,59,.13); right:-30px; top:-40px; pointer-events:none;
-  }
+  .hero-band::after { content:''; position:absolute; width:180px; height:180px; border-radius:50%; background:rgba(244,215,59,.13); right:-30px; top:-40px; pointer-events:none; }
   .hero-text { width: 100%; position: relative; z-index: 1; text-align: center; }
-  .hero-band-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900; font-size: 30px;
-    color: #fff; line-height: 1.15; letter-spacing: -0.5px;
-  }
-  .hero-band-title span {
-    display: block; font-size: 14px; font-weight: 600;
-    color: rgba(255,255,255,.75); margin-top: 10px; letter-spacing: .3px;
-  }
+  .hero-band-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 30px; color: #fff; line-height: 1.15; letter-spacing: -0.5px; }
+  .hero-band-title span { display: block; font-size: 14px; font-weight: 600; color: rgba(255,255,255,.75); margin-top: 10px; letter-spacing: .3px; }
 
   .wave { background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%); height: 28px; position: relative; flex-shrink: 0; }
   .wave::after { content:''; position:absolute; bottom:0; left:0; right:0; height:28px; background:#fff; border-radius:24px 24px 0 0; }
@@ -73,39 +58,26 @@
   .screen-body { padding: 20px 18px 12px; flex-shrink: 0; }
   .content-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 20px; color: var(--texto); line-height: 1.2; margin-bottom: 18px; text-align: center; }
 
-  .section-label {
-    font-family: 'Montserrat', sans-serif; font-weight: 900;
-    font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase;
-    color: var(--muted); margin: 18px 0 8px 4px;
-  }
+  .section-label { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px 4px; }
 
-  .menu-btn {
-    display: flex; align-items: center; gap: 14px;
-    width: 100%; background: #fff; border: 1.5px solid var(--borde);
-    border-radius: 14px; padding: 15px 16px; margin-bottom: 10px;
-    cursor: pointer; text-align: left;
-    box-shadow: 0 2px 8px rgba(0,60,120,.06);
-  }
+  .menu-btn { display: flex; align-items: center; gap: 14px; width: 100%; background: #fff; border: 1.5px solid var(--borde); border-radius: 14px; padding: 15px 16px; margin-bottom: 10px; cursor: pointer; text-align: left; box-shadow: 0 2px 8px rgba(0,60,120,.06); }
   .menu-btn:active { background: var(--gris); border-color: var(--azul); }
   .menu-btn-icon { width: 42px; height: 42px; border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
   .menu-btn-title { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 13px; color: var(--texto); margin-bottom: 3px; }
   .menu-btn-sub { font-size: 11px; color: var(--muted); }
   .menu-btn-arrow { font-size: 20px; color: var(--borde); margin-left: auto; flex-shrink: 0; }
 
-  /* OPCIÓN DE SELECCIÓN (para submenús de tipo pago) */
-  .select-btn {
-    display: flex; align-items: center; gap: 12px;
-    width: 100%; background: #fff; border: 1.5px solid var(--borde);
-    border-radius: 12px; padding: 14px 16px; margin-bottom: 8px;
-    cursor: pointer; text-align: left;
-    box-shadow: 0 1px 6px rgba(0,60,120,.05);
-    transition: border-color .15s, background .15s;
-  }
+  .select-btn { display: flex; align-items: center; gap: 12px; width: 100%; background: #fff; border: 1.5px solid var(--borde); border-radius: 12px; padding: 14px 16px; margin-bottom: 8px; cursor: pointer; text-align: left; box-shadow: 0 1px 6px rgba(0,60,120,.05); }
   .select-btn:active { background: var(--gris); border-color: var(--azul); }
-  .select-btn-icon { font-size: 22px; flex-shrink: 0; }
+  .select-btn-icon { font-size: 20px; flex-shrink: 0; }
   .select-btn-label { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 13px; color: var(--texto); }
   .select-btn-desc { font-size: 11px; color: var(--muted); margin-top: 2px; }
   .select-btn-arrow { font-size: 18px; color: var(--borde); margin-left: auto; flex-shrink: 0; }
+
+  /* CERT GRID: botones tipo chip en grilla */
+  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 18px; }
+  .cert-chip { background: var(--azul); color: #fff; border: none; border-radius: 10px; padding: 12px 10px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px; line-height: 1.35; text-align: center; cursor: pointer; }
+  .cert-chip:active { background: var(--azul2); }
 
   .bullet-list { margin-bottom: 18px; }
   .bullet-item { display: flex; align-items: flex-start; gap: 10px; padding: 11px 0; border-bottom: 1px solid var(--borde); font-size: 13px; color: var(--texto); line-height: 1.5; }
@@ -151,7 +123,6 @@
 </head>
 <body>
 
-<!-- LOADING -->
 <div id="loading">
   <div style="background:#fff;border-radius:16px;padding:20px 28px;display:flex;align-items:center;justify-content:center;">
     <img src="logo-uam.png" style="height:70px;object-fit:contain;display:block;" alt="UAM">
@@ -161,15 +132,10 @@
 
 <!-- ═══ HOME ═══ -->
 <div class="screen active" id="s-home">
-  <div class="top-bar">
-    <img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM">
-  </div>
+  <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="hero-band">
     <div class="hero-text">
-      <div class="hero-band-title">
-        SERVICIOS ACADÈMICOS
-        <span>Registro Académico · UAM</span>
-      </div>
+      <div class="hero-band-title">SERVICIOS ACADÉMICOS<span>Registro Académico · UAM</span></div>
     </div>
   </div>
   <div class="wave"></div>
@@ -269,7 +235,6 @@
       <div><div class="menu-btn-title">GUÍA DE DILIGENCIAMIENTO</div><div class="menu-btn-sub">Cómo llenar el formulario de certificados</div></div>
       <div class="menu-btn-arrow">›</div>
     </div>
-
   </div>
   <div class="stripe-bottom"></div>
 </div>
@@ -283,15 +248,14 @@
       <span class="note-icon">ℹ️</span>
       <div>Selecciona el tipo de pago que deseas realizar para ver las instrucciones específicas.</div>
     </div>
-
     <div class="select-btn" onclick="goTo('s-pago-matricula')">
       <div class="select-btn-icon">🎓</div>
-      <div><div class="select-btn-label">MATRÍCULA</div><div class="select-btn-desc">Pago de matrícula del período académico</div></div>
+      <div><div class="select-btn-label">MATRÍCULA</div><div class="select-btn-desc">Pago del período académico vigente</div></div>
       <div class="select-btn-arrow">›</div>
     </div>
     <div class="select-btn" onclick="goTo('s-pago-otros')">
       <div class="select-btn-icon">📋</div>
-      <div><div class="select-btn-label">OTROS CONCEPTOS</div><div class="select-btn-desc">Derechos de grado, laboratorios, talleres, etc.</div></div>
+      <div><div class="select-btn-label">OTROS CONCEPTOS</div><div class="select-btn-desc">Carnets, homologaciones, laboratorios y más</div></div>
       <div class="select-btn-arrow">›</div>
     </div>
     <div class="select-btn" onclick="goTo('s-pago-cuota')">
@@ -304,15 +268,15 @@
       <div><div class="select-btn-label">CERTIFICADOS ACADÉMICOS</div><div class="select-btn-desc">Pago para solicitar certificados y documentos</div></div>
       <div class="select-btn-arrow">›</div>
     </div>
-
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/')">IR A PAGOS →</button>
     </div>
   </div>
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ PAGO EN LÍNEA — MATRÍCULA ═══ -->
+<!-- ═══ PAGO — MATRÍCULA ═══ -->
 <div class="screen" id="s-pago-matricula">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
@@ -324,86 +288,79 @@
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div>
-          <div class="step-title">Genera tu recibo</div>
-          <div class="step-text">Ingresa a <strong>Intranet UAM → Servicios Financieros → Recibo Matrícula</strong> y descarga tu recibo del período actual.</div>
-        </div>
+        <div><div class="step-title">Genera tu recibo</div>
+        <div class="step-text">Ingresa a <strong>Intranet UAM → Servicios Financieros → Recibo Matrícula</strong> y descarga tu recibo del período actual.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Realiza el pago en línea</div>
-          <div class="step-text">Accede a la plataforma de pagos en línea. Puedes pagar con <strong>PSE o tarjeta de crédito/débito</strong>.</div>
-        </div>
+        <div><div class="step-title">Paga en línea</div>
+        <div class="step-text">Ingresa a la plataforma de pagos UAM y realiza el pago con <strong>PSE o tarjeta de crédito/débito</strong>. El comprobante se registra automáticamente.</div></div>
       </div>
       <div class="step">
-        <div class="step-num" style="background:var(--verde)">3</div>
-        <div>
-          <div class="step-title">Pago PSE / Tarjeta</div>
-          <div class="step-text">El comprobante se registra <strong>automáticamente</strong> en el sistema. No necesitas subirlo manualmente.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num" style="background:var(--naranja)">4</div>
-        <div>
-          <div class="step-title">Pago por Transferencia</div>
-          <div class="step-text">Si realizas una <strong>transferencia bancaria</strong>, debes subir el comprobante manualmente en la plataforma.</div>
-        </div>
+        <div class="step-num" style="background:var(--naranja)">3</div>
+        <div><div class="step-title">¿Pagaste por transferencia?</div>
+        <div class="step-text">Si realizaste una <strong>transferencia bancaria</strong>, debes subir el comprobante manualmente en la plataforma para que quede registrado.</div></div>
       </div>
     </div>
     <div class="note note-yellow">
       <span class="note-icon">⚠️</span>
-      <div>Si tienes <strong>descuento o beca sujeta a condiciones</strong>, el recibo solo refleja el valor correcto después de que termines el semestre y cumplas los requisitos.</div>
+      <div>Si tienes <strong>descuento o beca sujeta a condiciones</strong>, el recibo solo refleja el valor correcto después de terminar el semestre y cumplir los requisitos exigidos.</div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
-      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/adjuntoPago?tipoPago=O')">PAGAR EN LÍNEA →</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/')">PAGAR EN LÍNEA →</button>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-yellow" onclick="irA('https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/adjuntoPago?tipoPago=O')">⬆ SUBIR COMPROBANTE</button>
     </div>
   </div>
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ PAGO EN LÍNEA — OTROS CONCEPTOS ═══ -->
+<!-- ═══ PAGO — OTROS CONCEPTOS ═══ -->
 <div class="screen" id="s-pago-otros">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">PAGO — OTROS CONCEPTOS</div>
     <div class="note note-blue">
       <span class="note-icon">📋</span>
-      <div>Aquí puedes pagar conceptos diferentes a la matrícula: <strong>derechos de grado, laboratorios, talleres, inscripciones</strong> y otros servicios universitarios.</div>
+      <div>Aplica para <strong>estudiantes de pregrado, posgrado, administrativos y docentes UAM</strong>. Al pagar se envía confirmación a tu correo y al área encargada.</div>
+    </div>
+    <div class="section-label" style="margin-top:4px">¿Qué puedes pagar aquí?</div>
+    <div class="bullet-list">
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Carnets</strong> — reposición por pérdida o daño</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Contenidos programáticos</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Cancelación de materias</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Recibos de homologación</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Homologación de inglés</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Otros conceptos académicos y administrativos</span></div>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div>
-          <div class="step-title">Identifica el concepto</div>
-          <div class="step-text">Ten a mano el nombre exacto del concepto a pagar. En algunos casos Registro Académico te habrá indicado el valor y la referencia.</div>
-        </div>
+        <div><div class="step-title">Ingresa a la plataforma</div>
+        <div class="step-text">En la plataforma de pagos completa: documento de identidad, correo electrónico y selecciona tu <strong>programa académico</strong>.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Ingresa a la plataforma</div>
-          <div class="step-text">Accede a <strong>Intranet UAM → Servicios Financieros → Otros Conceptos</strong> y selecciona el ítem correspondiente.</div>
-        </div>
+        <div><div class="step-title">Selecciona el concepto</div>
+        <div class="step-text">Elige el <strong>concepto de pago</strong> en el desplegable. El sistema calcula el valor automáticamente según el concepto y la cantidad.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--naranja)">3</div>
-        <div>
-          <div class="step-title">Realiza y confirma el pago</div>
-          <div class="step-text">Paga con PSE, tarjeta o transferencia. Si pagas por <strong>transferencia</strong>, sube el comprobante manualmente.</div>
-        </div>
+        <div><div class="step-title">Paga en línea</div>
+        <div class="step-text">Haz clic en <strong>"Pagar en Línea"</strong> y completa el proceso con PSE o tarjeta. Solo debes subir comprobante si pagas por transferencia.</div></div>
       </div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
-      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/')">IR A INTRANET →</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/otros_conceptos?concepto=todos')">IR A OTROS CONCEPTOS →</button>
     </div>
   </div>
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ PAGO EN LÍNEA — CUOTA FINANCIACIÓN ═══ -->
+<!-- ═══ PAGO — CUOTA FINANCIACIÓN ═══ -->
 <div class="screen" id="s-pago-cuota">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
@@ -415,24 +372,18 @@
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div>
-          <div class="step-title">Consulta tu estado de cuenta</div>
-          <div class="step-text">Ingresa a <strong>Intranet UAM → Servicios Financieros → Estado de Cuenta</strong> para ver el saldo y las cuotas pendientes.</div>
-        </div>
+        <div><div class="step-title">Consulta tu estado de cuenta</div>
+        <div class="step-text">Ingresa a la plataforma de pagos UAM y revisa el saldo y las cuotas pendientes de tu financiación.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Selecciona la cuota a pagar</div>
-          <div class="step-text">Elige la cuota del período correspondiente. Verifica el <strong>valor exacto y la fecha límite</strong> de pago.</div>
-        </div>
+        <div><div class="step-title">Selecciona la cuota</div>
+        <div class="step-text">Elige la cuota del período correspondiente. Verifica el <strong>valor exacto y la fecha límite</strong>.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--naranja)">3</div>
-        <div>
-          <div class="step-title">Realiza el pago</div>
-          <div class="step-text">Paga con PSE o tarjeta (registro automático) o por <strong>transferencia</strong> (debes subir comprobante).</div>
-        </div>
+        <div><div class="step-title">Realiza el pago</div>
+        <div class="step-text">Paga con PSE o tarjeta (automático) o por <strong>transferencia</strong> (debes subir comprobante manualmente).</div></div>
       </div>
     </div>
     <div class="note note-yellow">
@@ -441,42 +392,36 @@
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
-      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/')">IR A INTRANET →</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/')">IR A PAGOS →</button>
     </div>
   </div>
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ PAGO EN LÍNEA — CERTIFICADOS ═══ -->
+<!-- ═══ PAGO — CERTIFICADOS ═══ -->
 <div class="screen" id="s-pago-certificado">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">PAGO — CERTIFICADOS ACADÉMICOS</div>
     <div class="note note-blue">
       <span class="note-icon">📜</span>
-      <div>El pago y la solicitud del certificado se hacen en el <strong>mismo proceso</strong> dentro de la Intranet.</div>
+      <div>El pago y la solicitud del certificado se hacen en el <strong>mismo proceso</strong> dentro de la plataforma de certificados.</div>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div>
-          <div class="step-title">Selecciona "Solicitar Certificado"</div>
-          <div class="step-text">Ingresa a la plataforma y elige el tipo de certificado que necesitas (estudio, calificaciones, conducta, etc.).</div>
-        </div>
+        <div><div class="step-title">Selecciona el certificado</div>
+        <div class="step-text">Ingresa a la plataforma, elige el tipo de certificado e ingresa tu número de documento y programa.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Realiza el pago</div>
-          <div class="step-text">Paga a través de la plataforma segura con PSE o tarjeta. El comprobante se sube <strong>automáticamente</strong>.</div>
-        </div>
+        <div><div class="step-title">Pagar en línea o generar recibo</div>
+        <div class="step-text">Puedes <strong>pagar en línea</strong> directamente (PSE/tarjeta) o <strong>generar un recibo</strong> para pagarlo en banco. Si pagas en banco o por transferencia, debes subir el comprobante.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--verde)">3</div>
-        <div>
-          <div class="step-title">Confirmación</div>
-          <div class="step-text">Recibirás confirmación a tu <strong>correo institucional</strong> y podrás hacer seguimiento desde la Intranet.</div>
-        </div>
+        <div><div class="step-title">Confirmación al correo</div>
+        <div class="step-text">Recibirás el certificado en tu <strong>correo electrónico registrado</strong>. Asegúrate de que esté actualizado antes de solicitar.</div></div>
       </div>
     </div>
     <div class="btn-row">
@@ -487,61 +432,73 @@
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ SOLICITAR CERTIFICADO — SELECCIÓN ═══ -->
+<!-- ═══ SOLICITAR CERTIFICADO — GRILLA COMPLETA ═══ -->
 <div class="screen" id="s-certificado">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">SOLICITAR CERTIFICADO</div>
     <div class="note note-blue">
       <span class="note-icon">📜</span>
-      <div>Selecciona el tipo de certificado que necesitas para ver la información y requisitos específicos.</div>
+      <div>Toca el certificado que necesitas para ver los detalles. Todos se solicitan desde la <strong>misma plataforma</strong>.</div>
     </div>
 
-    <div class="select-btn" onclick="goTo('s-cert-estudio')">
-      <div class="select-btn-icon">🎓</div>
-      <div><div class="select-btn-label">CERTIFICADO DE ESTUDIO</div><div class="select-btn-desc">Constancia de que eres estudiante activo</div></div>
-      <div class="select-btn-arrow">›</div>
+    <div class="section-label" style="margin-top:4px">📋 Certificados de Matrícula</div>
+    <div class="cert-grid">
+      <button class="cert-chip" onclick="goTo('s-cert-matricula')">Certificado de Matrícula</button>
+      <button class="cert-chip" onclick="goTo('s-cert-matricula')">Certificado de Matrícula con Horario</button>
+      <button class="cert-chip" onclick="goTo('s-cert-matricula')">Certificado de Matrícula Posgrado</button>
+      <button class="cert-chip" onclick="goTo('s-cert-matricula')">Certificado de Matrícula Doble Programa</button>
+      <button class="cert-chip" onclick="goTo('s-cert-matricula')">Certificado Matriculado Financieramente</button>
+      <button class="cert-chip" onclick="goTo('s-cert-matricula')">Certificado Períodos Matriculados</button>
     </div>
-    <div class="select-btn" onclick="goTo('s-cert-notas')">
-      <div class="select-btn-icon">📊</div>
-      <div><div class="select-btn-label">CERTIFICADO DE NOTAS</div><div class="select-btn-desc">Historial de calificaciones por período</div></div>
-      <div class="select-btn-arrow">›</div>
+
+    <div class="section-label">📊 Certificados de Notas y Plan</div>
+    <div class="cert-grid">
+      <button class="cert-chip" onclick="goTo('s-cert-notas')">Certificado de Notas</button>
+      <button class="cert-chip" onclick="goTo('s-cert-notas')">Certificado de Notas por Carrera</button>
+      <button class="cert-chip" onclick="goTo('s-cert-plan')">Certificado de Plan de Estudios</button>
+      <button class="cert-chip" onclick="goTo('s-cert-plan')">Certificado Culminación Plan de Estudios</button>
+      <button class="cert-chip" onclick="goTo('s-cert-plan')">Certificado de Radiología</button>
+      <button class="cert-chip" onclick="goTo('s-cert-plan')">Certificado de Puesto Ocupado</button>
     </div>
-    <div class="select-btn" onclick="goTo('s-cert-conducta')">
-      <div class="select-btn-icon">✅</div>
-      <div><div class="select-btn-label">CERTIFICADO DE CONDUCTA</div><div class="select-btn-desc">Constancia de buena conducta académica</div></div>
-      <div class="select-btn-arrow">›</div>
+
+    <div class="section-label">🏅 Certificados de Grado y Conducta</div>
+    <div class="cert-grid">
+      <button class="cert-chip" onclick="goTo('s-cert-conducta')">Certificado de Buena Conducta</button>
+      <button class="cert-chip" onclick="goTo('s-cert-grado')">Certificado para ICETEX</button>
+      <button class="cert-chip" onclick="goTo('s-cert-grado')">Certificado Pendiente Ceremonia de Grado</button>
+      <button class="cert-chip" onclick="goTo('s-cert-grado')">Certificado Pendiente Trabajo de Grado</button>
     </div>
-    <div class="select-btn" onclick="goTo('s-cert-egresado')">
-      <div class="select-btn-icon">🏅</div>
-      <div><div class="select-btn-label">CERTIFICADO DE EGRESADO / GRADO</div><div class="select-btn-desc">Para quienes ya terminaron y/o se graduaron</div></div>
-      <div class="select-btn-arrow">›</div>
-    </div>
-    <div class="select-btn" onclick="goTo('s-cert-otros')">
-      <div class="select-btn-icon">📄</div>
-      <div><div class="select-btn-label">OTROS CERTIFICADOS</div><div class="select-btn-desc">Homologación, idiomas, créditos, etc.</div></div>
-      <div class="select-btn-arrow">›</div>
+
+    <div class="section-label">🌐 Otros</div>
+    <div class="cert-grid">
+      <button class="cert-chip" onclick="goTo('s-cert-embajada')">Certificado dirigido a la Embajada</button>
+      <button class="cert-chip" onclick="goTo('s-cert-otros')">Otros certificados</button>
     </div>
 
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">VER TODOS EN PLATAFORMA →</button>
     </div>
   </div>
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ CERT. ESTUDIO ═══ -->
-<div class="screen" id="s-cert-estudio">
+<!-- ═══ CERT. MATRÍCULA ═══ -->
+<div class="screen" id="s-cert-matricula">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
-    <div class="content-title">CERTIFICADO DE ESTUDIO</div>
-    <div class="note note-blue"><span class="note-icon">🎓</span><div>Constancia oficial de que eres <strong>estudiante activo</strong> de la UAM en el período vigente.</div></div>
+    <div class="content-title">CERTIFICADOS DE MATRÍCULA</div>
+    <div class="note note-blue"><span class="note-icon">🎓</span><div>Constancias que acreditan tu <strong>estado como estudiante matriculado</strong> en el período vigente o en períodos anteriores.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot"></div><span>Válido para EPS, caja de compensación, empresas y entidades externas</span></div>
-      <div class="bullet-item"><div class="bullet-dot"></div><span>Se expide en <strong>formato digital o físico</strong> según lo que solicites</span></div>
-      <div class="bullet-item"><div class="bullet-dot"></div><span>En observaciones indica a <strong>quién va dirigido</strong> (Ej: Sura, Confa, ICETEX)</span></div>
-      <div class="bullet-item"><div class="bullet-dot"></div><span>Tiempo de entrega: <strong>1 a 2 días hábiles</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Con horario:</strong> incluye las asignaturas y horarios inscritos del período actual</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Financieramente:</strong> certifica que tu matrícula financiera está al día</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Períodos matriculados:</strong> lista todos los períodos en que has estado matriculado</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span><strong>Doble programa:</strong> para quienes cursan dos carreras simultáneamente</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Indica en <strong>Información Complementaria</strong> a qué entidad va dirigido (Sura, Confa, EPS, empresa, etc.)</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Especifica si lo necesitas en formato <strong>digital, físico o ambos</strong></span></div>
     </div>
+    <div class="note note-green"><span class="note-icon">✅</span><div>El certificado llega al <strong>correo registrado</strong> en la plataforma. Verifica que sea el correcto antes de solicitar.</div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">SOLICITAR →</button>
@@ -554,13 +511,34 @@
 <div class="screen" id="s-cert-notas">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
-    <div class="content-title">CERTIFICADO DE NOTAS</div>
-    <div class="note note-purple"><span class="note-icon">📊</span><div>Documento oficial con el <strong>historial de calificaciones</strong> por período o de toda la carrera.</div></div>
+    <div class="content-title">CERTIFICADOS DE NOTAS</div>
+    <div class="note note-purple"><span class="note-icon">📊</span><div>Documentos con el <strong>historial de calificaciones</strong>, ya sea por período o por carrera completa.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Puedes solicitar notas de <strong>un período específico</strong> o del historial completo</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Especifica en observaciones el <strong>período o rango</strong> que necesitas</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Indica si lo necesitas en <strong>formato digital o físico</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Tiempo de entrega: <strong>1 a 2 días hábiles</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span><strong>Certificado de Notas:</strong> calificaciones del período o períodos que selecciones</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span><strong>Certificado de Notas por Carrera:</strong> historial completo de toda la carrera</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>En el campo <strong>Período</strong> selecciona el rango que necesitas</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Indica en observaciones si lo necesitas en formato <strong>digital o físico</strong></span></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">SOLICITAR →</button>
+    </div>
+  </div>
+  <div class="stripe-bottom"></div>
+</div>
+
+<!-- ═══ CERT. PLAN DE ESTUDIOS ═══ -->
+<div class="screen" id="s-cert-plan">
+  <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
+  <div class="screen-body">
+    <div class="content-title">CERTIFICADOS DE PLAN Y PROGRAMA</div>
+    <div class="note note-green"><span class="note-icon">📚</span><div>Certificados relacionados con el <strong>plan de estudios, contenidos y avance académico</strong>.</div></div>
+    <div class="bullet-list">
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span><strong>Plan de estudios:</strong> detalle de las asignaturas del programa</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span><strong>Culminación plan de estudios:</strong> certifica que completaste todas las materias del plan</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span><strong>Radiología:</strong> certificado específico del programa de Radiología</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span><strong>Puesto ocupado:</strong> certifica tu posición de mérito en el programa</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Usa el campo de observaciones para <strong>detallar exactamente</strong> lo que necesitas</span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -574,13 +552,13 @@
 <div class="screen" id="s-cert-conducta">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
-    <div class="content-title">CERTIFICADO DE CONDUCTA</div>
-    <div class="note note-green"><span class="note-icon">✅</span><div>Constancia de que no tienes <strong>sanciones disciplinarias</strong> vigentes en la universidad.</div></div>
+    <div class="content-title">CERTIFICADO DE BUENA CONDUCTA</div>
+    <div class="note note-green"><span class="note-icon">✅</span><div>Constancia de que no tienes <strong>sanciones disciplinarias vigentes</strong> en la universidad.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Requerido por algunas empresas, colegios de abogados u otras entidades</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Requerido por empresas, colegios de abogados u otras entidades</span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>En observaciones indica a <strong>quién va dirigido</strong></span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Si tienes algún proceso disciplinario abierto, puede <strong>afectar la emisión</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Tiempo de entrega: <strong>1 a 2 días hábiles</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Tiempo estimado de entrega: <strong>1 a 2 días hábiles</strong></span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -590,18 +568,39 @@
   <div class="stripe-bottom"></div>
 </div>
 
-<!-- ═══ CERT. EGRESADO ═══ -->
-<div class="screen" id="s-cert-egresado">
+<!-- ═══ CERT. GRADO / ICETEX ═══ -->
+<div class="screen" id="s-cert-grado">
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
-    <div class="content-title">CERTIFICADO DE EGRESADO / GRADO</div>
-    <div class="note note-yellow"><span class="note-icon">🏅</span><div>Para egresados o graduados que necesitan constancia de haber <strong>completado su programa académico</strong>.</div></div>
+    <div class="content-title">CERTIFICADOS DE GRADO E ICETEX</div>
+    <div class="note note-yellow"><span class="note-icon">🏅</span><div>Certificados para trámites de <strong>grado, trabajo de grado e ICETEX</strong>.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Debes estar a <strong>paz y salvo</strong> con la universidad antes de solicitarlo</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Para trámites antes del año 2003 el proceso puede tomar <strong>más tiempo</strong> por consulta de archivos físicos</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Indica en observaciones si necesitas formato <strong>digital, físico o apostillado</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span><strong>Para ICETEX:</strong> certifica que eres beneficiario activo del crédito educativo</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span><strong>Pendiente Ceremonia de Grado:</strong> para quienes aprobaron materias pero esperan ceremonia</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span><strong>Pendiente Trabajo de Grado:</strong> para quienes tienen todos los requisitos excepto el trabajo de grado</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Debes estar <strong>a paz y salvo</strong> con la universidad antes de solicitar</span></div>
     </div>
-    <div class="note note-blue"><span class="note-icon">ℹ️</span><div>Si eres egresado <strong>antes del 2003</strong>, usa la opción <em>"Trámite antes del 2003"</em> en el menú principal.</div></div>
+    <div class="note note-blue"><span class="note-icon">ℹ️</span><div>Para egresados <strong>anteriores al año 2003</strong>, consulta la sección <em>Trámite antes del 2003</em>.</div></div>
+    <div class="btn-row">
+      <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">SOLICITAR →</button>
+    </div>
+  </div>
+  <div class="stripe-bottom"></div>
+</div>
+
+<!-- ═══ CERT. EMBAJADA ═══ -->
+<div class="screen" id="s-cert-embajada">
+  <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
+  <div class="screen-body">
+    <div class="content-title">CERTIFICADO PARA EMBAJADA</div>
+    <div class="note note-blue"><span class="note-icon">🌐</span><div>Certificado oficial dirigido específicamente a <strong>embajadas o consulados</strong> para trámites de visa u otros.</div></div>
+    <div class="bullet-list">
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Indica en observaciones el <strong>nombre del país y la embajada</strong> a la que va dirigido</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Especifica el <strong>propósito</strong>: visa de estudio, trabajo, turismo, intercambio, etc.</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Si necesitas versión en inglés u otro idioma, indícalo en <strong>Información Complementaria</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Puede requerir tiempo adicional de procesamiento</span></div>
+    </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">SOLICITAR →</button>
@@ -615,11 +614,11 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">OTROS CERTIFICADOS</div>
-    <div class="note note-blue"><span class="note-icon">📄</span><div>Certificados especiales: homologaciones, idiomas, créditos cursados, entre otros.</div></div>
+    <div class="note note-blue"><span class="note-icon">📄</span><div>Para certificados especiales que no estén en las categorías anteriores.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot"></div><span>En la plataforma encontrarás la lista completa de <strong>tipos de certificado</strong> disponibles</span></div>
-      <div class="bullet-item"><div class="bullet-dot"></div><span>Si no encuentras el que necesitas, escribe a <strong>registro.academico@autonoma.edu.co</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot"></div><span>Usa el campo de observaciones para <strong>especificar exactamente</strong> lo que necesitas</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>En la plataforma encontrarás la lista completa de <strong>tipos disponibles</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Usa el campo de observaciones para <strong>describir exactamente</strong> lo que necesitas</span></div>
+      <div class="bullet-item"><div class="bullet-dot"></div><span>Si no encuentras el certificado que necesitas, escribe a <strong>registro.academico@autonoma.edu.co</strong></span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -637,37 +636,31 @@
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div>
-          <div class="step-title">Genera tu recibo en Intranet</div>
-          <div class="step-text">Ingresa a <strong>Intranet UAM → Servicios Financieros → Recibo Matrícula</strong> y descarga el recibo del período vigente.</div>
-        </div>
+        <div><div class="step-title">Genera tu recibo en Intranet</div>
+        <div class="step-text">Ingresa a <strong>Intranet UAM → Servicios Financieros → Recibo Matrícula</strong> y descarga el recibo del período vigente.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Paga en banco o en línea</div>
-          <div class="step-text">Puedes pagar en cualquier <strong>banco autorizado</strong> o directamente en línea con PSE o tarjeta.</div>
-        </div>
+        <div><div class="step-title">Paga en banco o en línea</div>
+        <div class="step-text">Puedes pagar en cualquier <strong>banco autorizado</strong> o directamente en línea con PSE o tarjeta.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--naranja)">3</div>
-        <div>
-          <div class="step-title">Sube el comprobante</div>
-          <div class="step-text">Si pagaste en banco o por <strong>transferencia</strong>, es obligatorio subir el comprobante. Si pagaste en línea con PSE o tarjeta, el sistema lo registra automáticamente.</div>
-        </div>
+        <div><div class="step-title">Sube el comprobante</div>
+        <div class="step-text">Si pagaste en <strong>banco o por transferencia</strong>, es obligatorio subir el comprobante. Si pagaste en línea (PSE / tarjeta), el sistema lo registra automáticamente.</div></div>
       </div>
     </div>
     <div class="note note-yellow">
       <span class="note-icon">⚠️</span>
-      <div>Si tienes <strong>descuento o beca sujeta a condiciones</strong>, debes esperar a que termine el semestre y haber cumplido los requisitos para que se vea reflejado en tu recibo.</div>
+      <div>Si tienes <strong>descuento o beca sujeta a condiciones</strong>, debes esperar a que termine el semestre y haber cumplido los requisitos para que se refleje correctamente en tu recibo.</div>
     </div>
     <div class="note note-red">
       <span class="note-icon">🚫</span>
-      <div>Sin el comprobante de pago subido al sistema, tu matrícula <strong>no quedará registrada</strong>.</div>
+      <div>Sin el comprobante subido al sistema, tu matrícula <strong>no quedará registrada</strong>.</div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
-      <button class="btn btn-yellow" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">GENERAR RECIBO →</button>
+      <button class="btn btn-yellow" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/l/url/estudiantes/recibo/index.php')">GENERAR RECIBO →</button>
     </div>
     <div class="btn-row">
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/adjuntoPago?tipoPago=O')">⬆ SUBIR COMPROBANTE</button>
@@ -685,47 +678,38 @@
       <span class="note-icon">🪪</span>
       <div>Si <strong>perdiste o se dañó</strong> tu carnet, debes solicitar uno nuevo y efectuar el pago correspondiente.</div>
     </div>
-
-    <div class="section-label" style="margin-top:4px">💳 Opciones de Pago</div>
+    <div class="section-label" style="margin-top:4px">💳 ¿Cómo pagar?</div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span><strong>Pago en línea (PSE o tarjeta):</strong> no es necesario subir comprobante, el sistema lo registra automáticamente</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span><strong>Pago por transferencia:</strong> debes subir el comprobante manualmente al sistema</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span><strong>Pago en punto físico (banco):</strong> debes subir el comprobante manualmente al sistema</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span><strong>PSE o tarjeta en línea:</strong> el sistema registra el pago automáticamente, no necesitas subir comprobante</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span><strong>Transferencia bancaria:</strong> debes subir el comprobante manualmente</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span><strong>Pago en banco (punto físico):</strong> debes subir el comprobante manualmente</span></div>
     </div>
-
-    <div class="section-label">📸 Cambio de Foto</div>
+    <div class="section-label">📸 ¿Quieres cambiar la foto?</div>
     <div class="note note-yellow">
       <span class="note-icon">📷</span>
-      <div>Si deseas <strong>actualizar tu foto</strong> en el carnet, acércate directamente al área de <strong>Registro Académico</strong>. No se realiza por la plataforma virtual.</div>
+      <div>El cambio de foto <strong>no se hace en línea</strong>. Acércate directamente al área de <strong>Registro Académico</strong>.</div>
     </div>
-
-    <div class="section-label">🔁 Proceso de Solicitud</div>
+    <div class="section-label">🔁 Pasos</div>
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div>
-          <div class="step-title">Solicita el carnet</div>
-          <div class="step-text">Ingresa a la plataforma y selecciona la opción de <strong>reposición de carnet</strong>. Indica el motivo: pérdida o daño.</div>
-        </div>
+        <div><div class="step-title">Solicita y paga</div>
+        <div class="step-text">Ingresa a la plataforma de <strong>Otros Conceptos</strong>, selecciona "Carnet" como concepto de pago, indica el motivo (pérdida o daño) y realiza el pago.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Efectúa el pago</div>
-          <div class="step-text">Realiza el pago según la opción de tu preferencia. Recuerda subir el comprobante si pagaste en banco o por transferencia.</div>
-        </div>
+        <div><div class="step-title">Sube comprobante si aplica</div>
+        <div class="step-text">Si pagaste en banco o por transferencia, sube el soporte desde la plataforma.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--verde)">3</div>
-        <div>
-          <div class="step-title">Recoge en Registro</div>
-          <div class="step-text">Una vez procesada la solicitud, recoge tu carnet en <strong>Registro Académico</strong> en 3 a 5 días hábiles.</div>
-        </div>
+        <div><div class="step-title">Recoge en Registro</div>
+        <div class="step-text">Una vez procesada la solicitud, recoge tu carnet en <strong>Registro Académico</strong> el mismo dia.</div></div>
       </div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
-      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">SOLICITAR →</button>
+      <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/otros_conceptos?concepto=todos')">PAGAR CARNET →</button>
     </div>
     <div class="btn-row">
       <button class="btn btn-yellow" onclick="irA('https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/adjuntoPago?tipoPago=O')">⬆ SUBIR COMPROBANTE</button>
@@ -746,24 +730,18 @@
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--rojo)">1</div>
-        <div>
-          <div class="step-title">Espera 24 horas</div>
-          <div class="step-text">Algunos pagos por PSE o banco pueden tardar hasta <strong>un día hábil</strong> en procesarse.</div>
-        </div>
+        <div><div class="step-title">Espera 24 horas</div>
+        <div class="step-text">Algunos pagos por PSE o banco pueden tardar hasta <strong>un día hábil</strong> en procesarse.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--naranja)">2</div>
-        <div>
-          <div class="step-title">Sube el comprobante</div>
-          <div class="step-text">Si ya tienes el soporte del banco o PSE, <strong>súbelo manualmente</strong> al sistema para agilizar el proceso.</div>
-        </div>
+        <div><div class="step-title">Sube el comprobante</div>
+        <div class="step-text">Si tienes el soporte del banco o la transferencia, <strong>súbelo manualmente</strong> al sistema para agilizar.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul)">3</div>
-        <div>
-          <div class="step-title">Contacta a Registro</div>
-          <div class="step-text">Si después de 24h y subir el comprobante el sistema no lo refleja, escribe a <strong>registro.academico@autonoma.edu.co</strong> adjuntando el soporte.</div>
-        </div>
+        <div><div class="step-title">Contacta a Registro</div>
+        <div class="step-text">Si después de 24h y subir el comprobante el sistema no lo refleja, escribe a <strong>registro.academico@autonoma.edu.co</strong> con el soporte adjunto.</div></div>
       </div>
     </div>
     <div class="btn-row">
@@ -782,28 +760,13 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">CITACIÓN DE INSCRIPCIÓN</div>
-    <div class="note note-blue">
-      <span class="note-icon">📅</span>
-      <div>La citación indica la <strong>fecha y hora exacta</strong> desde la cual puedes inscribir tus asignaturas. Respétala para evitar inconvenientes.</div>
-    </div>
+    <div class="note note-blue"><span class="note-icon">📅</span><div>La citación indica la <strong>fecha y hora exacta</strong> desde la cual puedes inscribir tus asignaturas.</div></div>
     <div class="steps">
-      <div class="step">
-        <div class="step-num" style="background:var(--azul)">1</div>
-        <div><div class="step-title">Ingresa al sistema</div><div class="step-text">Accede a la Intranet UAM con tu usuario y contraseña institucional.</div></div>
-      </div>
-      <div class="step">
-        <div class="step-num" style="background:var(--azul2)">2</div>
-        <div><div class="step-title">Consulta tu citación</div><div class="step-text">Dirígete a <strong>Inscripción de Asignaturas → Consultar Citación</strong>. Aparecerá la fecha y hora habilitada para ti.</div></div>
-      </div>
-      <div class="step">
-        <div class="step-num" style="background:var(--naranja)">3</div>
-        <div><div class="step-title">Inscribe en tu horario</div><div class="step-text">Solo podrás inscribir asignaturas <strong>a partir de tu hora de citación</strong>. Antes de esa hora el sistema no lo permitirá.</div></div>
-      </div>
+      <div class="step"><div class="step-num" style="background:var(--azul)">1</div><div><div class="step-title">Ingresa al sistema</div><div class="step-text">Accede a la Intranet UAM con tu usuario y contraseña institucional.</div></div></div>
+      <div class="step"><div class="step-num" style="background:var(--azul2)">2</div><div><div class="step-title">Consulta tu citación</div><div class="step-text">Ve a <strong>Inscripción de Asignaturas → Consultar Citación</strong>. Aparecerá la fecha y hora habilitada para ti.</div></div></div>
+      <div class="step"><div class="step-num" style="background:var(--naranja)">3</div><div><div class="step-title">Inscribe en tu horario</div><div class="step-text">Solo podrás inscribir asignaturas <strong>a partir de tu hora de citación</strong>.</div></div></div>
     </div>
-    <div class="note note-yellow">
-      <span class="note-icon">⚠️</span>
-      <div>Si no encuentras tu citación, escribe a <strong>registro.academico@autonoma.edu.co</strong></div>
-    </div>
+    <div class="note note-yellow"><span class="note-icon">⚠️</span><div>Si no encuentras tu citación escribe a <strong>registro.academico@autonoma.edu.co</strong></div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/')">IR A INTRANET →</button>
@@ -820,11 +783,11 @@
     <div class="note note-red"><span class="note-icon">📌</span><div>Cancelar una asignatura tiene <strong>consecuencias académicas y financieras</strong>. Infórmate bien antes de proceder.</div></div>
     <div class="bullet-list">
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Solo se puede cancelar <strong>dentro de las fechas habilitadas</strong> por el calendario académico</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>La cancelación <strong>no implica devolución</strong> del dinero si ya venció el plazo de reembolso</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>La cancelación <strong>no implica devolución</strong> del dinero si ya venció el plazo</span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Cancelar no afecta el promedio, pero sí los <strong>créditos inscritos</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Si cancelas por debajo del <strong>mínimo de créditos</strong> permitido, debes solicitar autorización</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Cancelar por debajo del <strong>mínimo de créditos</strong> requiere autorización especial</span></div>
     </div>
-    <div class="note note-yellow"><span class="note-icon">🗓️</span><div>Consulta las <strong>fechas exactas</strong> en el calendario académico o en la sección <em>Fechas Clave</em> de esta app.</div></div>
+    <div class="note note-yellow"><span class="note-icon">🗓️</span><div>Consulta las <strong>fechas exactas</strong> en el calendario académico o en <em>Fechas Clave</em>.</div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/')">IR A INTRANET →</button>
@@ -843,14 +806,14 @@
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span>Ocurren cuando dos asignaturas tienen <strong>el mismo horario</strong></span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span>El sistema <strong>no lo permite automáticamente</strong>; debes ajustar tu horario</span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span>Busca otro grupo del mismo curso con <strong>horario diferente</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span>Si no hay otra opción, comunícate con <strong>Registro Académico</strong> para evaluar el caso</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--naranja)"></div><span>Si no hay opción, comunícate con <strong>Registro Académico</strong></span></div>
     </div>
     <div class="section-label">🚫 Falta de Cupos</div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Si el grupo está lleno, el sistema <strong>no te permitirá inscribirte</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Verifica si existe <strong>otro grupo o jornada</strong> disponible del mismo curso</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Puedes solicitar <strong>ampliación de cupo</strong> ante el director de programa</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Escribe a <strong>registro.academico@autonoma.edu.co</strong> adjuntando el soporte de la solicitud</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Si el grupo está lleno el sistema <strong>no permitirá la inscripción</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Verifica si existe <strong>otro grupo o jornada</strong> del mismo curso</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Solicita <strong>ampliación de cupo</strong> ante el director de programa</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Escribe a <strong>registro.academico@autonoma.edu.co</strong> adjuntando el soporte</span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -865,13 +828,13 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">CORRECCIÓN DE NOTAS</div>
-    <div class="note note-blue"><span class="note-icon">✏️</span><div>Si detectas un error en una calificación, puedes solicitar corrección. Hay <strong>plazos estrictos</strong> para hacerlo.</div></div>
+    <div class="note note-blue"><span class="note-icon">✏️</span><div>Si detectas un error en una calificación, puedes solicitar corrección. Hay <strong>plazos estrictos</strong>.</div></div>
     <div class="steps">
-      <div class="step"><div class="step-num" style="background:var(--azul)">1</div><div><div class="step-title">Contacta al docente</div><div class="step-text">Primero comunícate con el profesor del curso. El docente debe verificar y confirmar el error.</div></div></div>
-      <div class="step"><div class="step-num" style="background:var(--azul2)">2</div><div><div class="step-title">Solicitud formal</div><div class="step-text">El docente diligencia el formato de <strong>corrección de nota</strong> y lo envía a Registro Académico firmado y con el aval del Director de Programa.</div></div></div>
-      <div class="step"><div class="step-num" style="background:var(--naranja)">3</div><div><div class="step-title">Registro actualiza</div><div class="step-text">Una vez recibido el formato, Registro Académico aplica la corrección. Recibirás confirmación por correo.</div></div></div>
+      <div class="step"><div class="step-num" style="background:var(--azul)">1</div><div><div class="step-title">Contacta al docente</div><div class="step-text">El profesor verifica y confirma el error.</div></div></div>
+      <div class="step"><div class="step-num" style="background:var(--azul2)">2</div><div><div class="step-title">Solicitud formal</div><div class="step-text">El docente diligencia el formato de <strong>corrección de nota</strong> con el aval del Director de Programa y lo envía a Registro.</div></div></div>
+      <div class="step"><div class="step-num" style="background:var(--naranja)">3</div><div><div class="step-title">Registro actualiza</div><div class="step-text">Aplican la corrección en el sistema y recibirás confirmación por correo.</div></div></div>
     </div>
-    <div class="note note-red"><span class="note-icon">⏱️</span><div>Las correcciones solo se aceptan <strong>dentro del período establecido</strong> en el calendario académico.</div></div>
+    <div class="note note-red"><span class="note-icon">⏱️</span><div>Las correcciones solo se aceptan <strong>dentro del período establecido</strong> en el calendario.</div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('mailto:registro.academico@autonoma.edu.co')">✉ ESCRIBIR →</button>
@@ -885,7 +848,7 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">CÁLCULO DEL PROMEDIO</div>
-    <div class="note note-purple"><span class="note-icon">📊</span><div>El promedio ponderado se calcula con base en los <strong>créditos de cada asignatura</strong>, no solo en las notas.</div></div>
+    <div class="note note-purple"><span class="note-icon">📊</span><div>El promedio ponderado se calcula con los <strong>créditos de cada asignatura</strong>, no solo las notas.</div></div>
     <div class="bullet-list">
       <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Fórmula: <strong>Σ (nota × créditos) ÷ Σ créditos</strong></span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:#6a1b9a"></div><span>Las asignaturas reprobadas <strong>sí afectan</strong> el promedio acumulado</span></div>
@@ -893,9 +856,8 @@
     </div>
     <div class="section-label">🏅 Créditos por Promedio</div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Estudiantes con <strong>alto promedio</strong> pueden acceder a créditos adicionales por mérito académico</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>El umbral mínimo y los créditos otorgados varían por <strong>programa académico</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Consulta con tu Director de Programa los <strong>requisitos específicos</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Alto promedio puede darte acceso a <strong>créditos adicionales por mérito</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>El umbral varía por <strong>programa académico</strong>; consulta con tu director</span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -910,20 +872,20 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">CRÉDITOS Y DISTRIBUCIÓN</div>
-    <div class="note note-green"><span class="note-icon">📐</span><div>Cada programa tiene un <strong>total de créditos</strong> distribuidos por componentes. Conocerlos te ayuda a planificar tu carrera.</div></div>
-    <div class="section-label" style="margin-top:0">📦 Créditos Disponibles por Período</div>
+    <div class="note note-green"><span class="note-icon">📐</span><div>Cada programa tiene un total de créditos distribuidos por componentes.</div></div>
+    <div class="section-label" style="margin-top:0">📦 Por Período</div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Cada período tienes un <strong>máximo y mínimo de créditos</strong> que puedes inscribir</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>El máximo puede ampliarse si tienes <strong>buen promedio</strong> (consulta a tu director)</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Inscribir por debajo del mínimo requiere <strong>autorización especial</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Hay un <strong>máximo y mínimo de créditos</strong> por período</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>El máximo puede ampliarse con <strong>buen promedio</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Inscribir por debajo del mínimo requiere <strong>autorización</strong></span></div>
     </div>
-    <div class="section-label">🗂️ Distribución por Componente</div>
+    <div class="section-label">🗂️ Por Componente</div>
     <table class="info-table">
       <tr><th>Componente</th><th>Descripción</th></tr>
-      <tr><td><strong>Básico</strong></td><td>Formación fundamental del programa</td></tr>
-      <tr><td><strong>Profesional</strong></td><td>Núcleo disciplinar específico</td></tr>
-      <tr><td><strong>Electivo</strong></td><td>Asignaturas de libre elección</td></tr>
-      <tr><td><strong>Complementario</strong></td><td>Formación integral y humanística</td></tr>
+      <tr><td><strong>Básico</strong></td><td>Formación fundamental</td></tr>
+      <tr><td><strong>Profesional</strong></td><td>Núcleo disciplinar</td></tr>
+      <tr><td><strong>Electivo</strong></td><td>Libre elección</td></tr>
+      <tr><td><strong>Complementario</strong></td><td>Formación integral</td></tr>
     </table>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -938,19 +900,17 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">DESCUENTOS Y BECAS</div>
-    <div class="section-label" style="margin-top:0">🏷️ Aplicación de Descuentos</div>
+    <div class="section-label" style="margin-top:0">🏷️ Descuentos</div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Los descuentos deben estar <strong>previamente aprobados</strong> antes de generar el recibo</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Si tienes convenio (empresa, egresado, hermano), debes presentar el <strong>soporte del convenio</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>El descuento <strong>no se aplica retroactivamente</strong> si ya pagaste sin él</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Verifica que tu recibo refleje el descuento <strong>antes de pagar</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Deben estar <strong>aprobados previamente</strong> antes de generar el recibo</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>Si tienes convenio, presenta el <strong>soporte del convenio</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--amarillo2)"></div><span>No se aplican <strong>retroactivamente</strong> si ya pagaste sin el descuento</span></div>
     </div>
-    <div class="section-label">🎓 Solicitud de Becas</div>
+    <div class="section-label">🎓 Becas</div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Las becas se solicitan en <strong>Bienestar Universitario</strong> o en la Dirección de Programa</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Hay becas por <strong>mérito académico, deporte, cultura y situación socioeconómica</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Cada convocatoria tiene <strong>fechas y requisitos específicos</strong>; consulta con anticipación</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Una vez aprobada, Registro aplica el beneficio en tu <strong>próximo recibo de matrícula</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Se solicitan en <strong>Bienestar Universitario</strong> o Dirección de Programa</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Hay becas por <strong>mérito, deporte, cultura y situación socioeconómica</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Una vez aprobada, Registro aplica el beneficio en el <strong>próximo recibo</strong></span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -965,14 +925,14 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">RESERVA DE CUPO</div>
-    <div class="note note-blue"><span class="note-icon">🔒</span><div>La reserva de cupo te permite <strong>suspender un período</strong> y conservar tu lugar en el programa para reintegrarte después.</div></div>
+    <div class="note note-blue"><span class="note-icon">🔒</span><div>Te permite <strong>suspender un período</strong> y conservar tu lugar para reintegrarte después.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Se solicita <strong>dentro de las fechas</strong> indicadas en el calendario académico</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Debes estar <strong>a paz y salvo</strong> con la universidad (cartera, biblioteca, etc.)</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>La reserva aplica por <strong>máximo dos períodos consecutivos</strong></span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Solicítala directamente en <strong>Registro Académico</strong> con tu documento de identidad</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Solicítala <strong>dentro de las fechas</strong> del calendario académico</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Debes estar <strong>a paz y salvo</strong> con la universidad</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Aplica por <strong>máximo dos períodos consecutivos</strong></span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--azul)"></div><span>Trámite presencial en <strong>Registro Académico</strong> con documento de identidad</span></div>
     </div>
-    <div class="note note-yellow"><span class="note-icon">⚠️</span><div>Si no te reintegras al finalizar la reserva, perderás el cupo en el programa.</div></div>
+    <div class="note note-yellow"><span class="note-icon">⚠️</span><div>Si no te reintegras al finalizar la reserva, <strong>perderás el cupo</strong>.</div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('mailto:registro.academico@autonoma.edu.co')">✉ SOLICITAR →</button>
@@ -986,13 +946,13 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">DOBLE PROGRAMA ACADÉMICO</div>
-    <div class="note note-green"><span class="note-icon">🎓</span><div>Puedes cursar <strong>dos programas simultáneamente</strong> en la UAM si cumples los requisitos académicos y financieros.</div></div>
+    <div class="note note-green"><span class="note-icon">🎓</span><div>Puedes cursar <strong>dos programas simultáneamente</strong> si cumples los requisitos.</div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Promedio acumulado <strong>igual o superior</strong> al mínimo exigido por cada programa</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>No tener asignaturas reprobadas ni <strong>sanciones académicas</strong> vigentes</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Promedio acumulado <strong>igual o superior</strong> al mínimo exigido</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Sin asignaturas reprobadas ni <strong>sanciones académicas</strong></span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Haber cursado al menos el <strong>30% de los créditos</strong> del programa de origen</span></div>
       <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Pagar matrícula en <strong>ambos programas</strong> cada período</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>La solicitud se radica en <strong>Registro Académico</strong> con el aval de ambos directores de programa</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--verde)"></div><span>Solicitud en <strong>Registro Académico</strong> con aval de ambos directores</span></div>
     </div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
@@ -1007,18 +967,17 @@
   <div class="top-bar"><img class="logo-ac" src="logo-ac.png" alt="Alta Calidad UAM"></div>
   <div class="screen-body">
     <div class="content-title">FECHAS CLAVE</div>
-    <div class="note note-yellow"><span class="note-icon">🗓️</span><div>Las fechas exactas varían cada período. Consulta siempre el <strong>calendario académico oficial</strong> en la Intranet.</div></div>
+    <div class="note note-yellow"><span class="note-icon">🗓️</span><div>Las fechas exactas varían cada período. Consulta el <strong>calendario académico oficial</strong> en la Intranet.</div></div>
     <table class="info-table">
       <tr><th>Trámite</th><th>¿Cuándo?</th></tr>
-      <tr><td><strong>Inscripción de asignaturas</strong></td><td>Según citación asignada al inicio del período</td></tr>
-      <tr><td><strong>Cancelación de asignaturas</strong></td><td>Primeras semanas del período (ver calendario)</td></tr>
-      <tr><td><strong>Devolución de matrícula</strong></td><td>Solo si se cancela antes del plazo oficial</td></tr>
-      <tr><td><strong>Reserva de cupo</strong></td><td>Antes de iniciar el período o primeras semanas</td></tr>
-      <tr><td><strong>Corrección de notas</strong></td><td>Dentro del período, tras publicación de notas</td></tr>
-      <tr><td><strong>Solicitud de becas</strong></td><td>Según convocatoria de Bienestar Universitario</td></tr>
-      <tr><td><strong>Solicitud de certificados</strong></td><td>Cualquier momento del año</td></tr>
+      <tr><td><strong>Inscripción de asignaturas</strong></td><td>Según citación asignada</td></tr>
+      <tr><td><strong>Cancelación de asignaturas</strong></td><td>Primeras semanas del período</td></tr>
+      <tr><td><strong>Devolución de matrícula</strong></td><td>Solo si cancela antes del plazo</td></tr>
+      <tr><td><strong>Reserva de cupo</strong></td><td>Antes o primeras semanas del período</td></tr>
+      <tr><td><strong>Corrección de notas</strong></td><td>Tras publicación de notas</td></tr>
+      <tr><td><strong>Solicitud de becas</strong></td><td>Según convocatoria de Bienestar</td></tr>
+      <tr><td><strong>Certificados</strong></td><td>Cualquier momento del año</td></tr>
     </table>
-    <div class="note note-blue"><span class="note-icon">ℹ️</span><div>Para fechas exactas del período actual, descarga el <strong>calendario académico</strong> desde la Intranet UAM.</div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/')">VER CALENDARIO →</button>
@@ -1034,10 +993,10 @@
     <div class="content-title">Trámite Antes del 2003</div>
     <div class="note note-red"><span class="note-icon">📌</span><div><strong>Instrucciones para egresados históricos:</strong></div></div>
     <div class="bullet-list">
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Se siguen los mismos pasos del proceso estándar</span></div>
-      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Si el documento <strong>no aparece registrado</strong>, el sistema desplegará un formulario para dejar tus datos</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Se siguen los mismos pasos del proceso estándar de certificados</span></div>
+      <div class="bullet-item"><div class="bullet-dot" style="background:var(--rojo)"></div><span>Si el documento <strong>no aparece registrado</strong>, el sistema mostrará un formulario para dejar tus datos</span></div>
     </div>
-    <div class="note note-yellow"><span class="note-icon">⏱️</span><div>El tiempo de respuesta puede ser <strong>mayor al habitual</strong> por búsqueda manual del historial.</div></div>
+    <div class="note note-yellow"><span class="note-icon">⏱️</span><div>El tiempo de respuesta puede ser <strong>mayor al habitual</strong> por búsqueda manual en archivos físicos.</div></div>
     <div class="btn-row">
       <button class="btn btn-ghost" onclick="goBack()">‹ Atrás</button>
       <button class="btn btn-primary" onclick="irA('https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado')">SOLICITAR →</button>
@@ -1054,21 +1013,23 @@
     <div class="steps">
       <div class="step">
         <div class="step-num" style="background:var(--azul)">1</div>
-        <div><div class="step-title">Datos Básicos</div><div class="step-text">Ingresa tu <strong>Documento de Identidad</strong>. Selecciona el <strong>Programa Académico</strong> del cual necesitas el certificado.</div></div>
+        <div><div class="step-title">Datos Básicos</div>
+        <div class="step-text">Ingresa tu <strong>Número de Documento</strong>. Selecciona el <strong>Programa Académico</strong> del cual necesitas el certificado.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--azul2)">2</div>
-        <div>
-          <div class="step-title">Verificación Automática</div>
-          <div class="step-text">Tu <strong>Nombre y Correo</strong> aparecerán automáticamente.<br><br>Si los datos son incorrectos: <strong>No continúes</strong>. Escribe a <a href="mailto:registro.academico@autonoma.edu.co">registro.academico@autonoma.edu.co</a></div>
-        </div>
+        <div><div class="step-title">Verificación Automática</div>
+        <div class="step-text">Tu <strong>Nombre y Correo</strong> aparecen automáticamente. Si son incorrectos, <strong>no continúes</strong> y escribe a <a href="mailto:gestec@autonoma.edu.co">gestec@autonoma.edu.co</a> para actualizarlos.</div></div>
       </div>
       <div class="step">
         <div class="step-num" style="background:var(--naranja)">3</div>
-        <div>
-          <div class="step-title">Información Complementaria</div>
-          <div class="step-text">En observaciones especifica:<br><br>• <strong>Entidad:</strong> a quién va dirigido (Ej: Confa, Sura, ICETEX)<br>• <strong>Formato:</strong> digital, físico o ambos</div>
-        </div>
+        <div><div class="step-title">Información Complementaria</div>
+        <div class="step-text">En observaciones indica:<br><br>• <strong>Entidad:</strong> a quién va dirigido (Confa, Sura, ICETEX, etc.)<br>• <strong>Formato:</strong> digital, físico o ambos</div></div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:var(--verde)">4</div>
+        <div><div class="step-title">Pagar en línea o generar recibo</div>
+        <div class="step-text">Usa <strong>"Pagar en Línea"</strong> para PSE/tarjeta (registro automático) o <strong>"Generar Recibo"</strong> para pagar en banco (debes subir comprobante después).</div></div>
       </div>
     </div>
     <div class="btn-row">
